@@ -1,0 +1,7072 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "HavenSpells",
+				"abbreviation": "HS",
+				"full": "Haven Spells",
+				"url": "",
+				"authors": [
+					"The Council"
+				],
+				"convertedBy": [
+					"Wombat"
+				]
+			}
+		],
+		"dateAdded": 1608532868,
+		"dateLastModified": 1608532868
+	},
+	"spell": [
+		{
+			"name": "Arcing Arrow",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a ranged weapon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"As part of the action used to cast this spell, you must make a ranged attack with a weapon against one creature within the spell’s range, otherwise the spell fails. On a hit, the target suffers the attack’s normal effects. On a miss, choose a second creature within range and make a ranged weapon attack with the same weapon against that creature. On a hit, the second creature takes lightning damage equal to your spellcasting ability modifier."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell’s damage increases when you reach higher levels. At 5th level, the ranged attack deals an extra {@damage 1d8} lightning damage whether it hits the original target or the second creature. This extra damage increases by {@dice 1d8} at 11th level ({@dice 2d8}) and 17th level ({@dice 3d8})."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Bee Sting",
+			"source": "HavenSpells",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"r": true,
+				"m": "a bumblebee's stinger"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You conjure a small bee that stings one creature within range. The stung creature must make a Constitution saving throw against poison. If the saving throw fails, the creature takes {@damage 2d8} poison damage and becomes {@condition poisoned} until the end of your next turn. If the save succeeds, the creature takes half damage and is not {@condition poisoned}."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"Does an additional {@damage 1d8} poison damage for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Blast Bolt",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"When you cast this spell make a spell attack roll against one target that you can see within range. On a hit, the target takes {@damage 1d10} lightning damage"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell's damage increases by {@dice 1d10} when you reach 5th Level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10})."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Double Lightning Helix",
+			"source": "HavenSpells",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a metal object"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A cone of lightning erupts from a metal object that you are holding. Each creature in a 30 foot cone must make a Constitution saving throw. A creature takes {@damage 6d6} lightning damage on a failed save, or half as much on a successful one. A creature that fails its save can't take reactions until the start of its next turn."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the lightning damage increases by {@dice 1d6} for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Investiture of Darkness",
+			"source": "HavenSpells",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Until the spell ends, smoky shadows and crackling necrotic energy envelope you like a cloak and you gain the following benefits:",
+				"-You are immune to necrotic damage",
+				"-Dim light and darkness, including magical darkness, don't impeded your vision.",
+				"-While you're in an area of dim light or darkness, including another creature's shadow, you can use your bonus action to teleport to another area of dim light or darkness that you can see.",
+				"-You can use your action to create a 15 foot sphere of magical darkness centered on a point you can see within 30 feet of you. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it. If a creature type other than undead dies within the darkness, it rises as a zombie under your control at the beginning of your next turn, as though the corpse were under the effects of the danse macabre spell. You roll initiative for each zombie created this way. The darkness lasts until the spell ends, or until you use your action this way again. When the spell ends, each zombie created by the spell becomes inanimate."
+			],
+			"miscTags": [
+				"TP"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Investiture of Light",
+			"source": "HavenSpells",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Until the spell ends, your body becomes wreathed in a corona of shining light, shedding bright light in a 30-foot radius and dim light for an additional 30 feet and you gain the following benefits: ",
+				"-You gain immunity to radiant damage.",
+				"-If the area of light shed by this spell overlaps an area of darkness created by a spell of 6th level or lower, the darkness is dispelled. ",
+				"-When you or a friendly creature starts its turn within 30 feet of you, if it’s below half its hit point maximum, it regains {@dice 1d4} hit points.",
+				"-You can use your action to create a flash of brilliant light in a 15-foot cone extending from you in a direction you choose. Each creature of your choice in the area must make a Constitution saving throw. A creature takes {@damage 3d8} radiant damage and is {@condition blinded} until the end of its next turn on a failed save, or half as much damage and isn’t {@condition blinded} on a success."
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"abilityCheck": [
+				"constitution"
+			],
+			"miscTags": [
+				"HL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Modron March",
+			"source": "HavenSpells",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"r": true,
+				"m": "two circular pieces of transparent glass"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Choose two points up to 60 feet apart that you can see within range, both of which must be on a flat surface, and that can be walked between in a straight line without venturing into hazards other than difficult terrain. ",
+				"A portal opens at each point, and a 10 foot wide line of modron rnonodrones and duodrones marches between them in a direction you indicate. The modrons ignore all conversation and interaction, even if attacked and focus only on making their way to their destination. ",
+				"The line of marching modrons provides half cover to creatures behind or in it against attacks and effects made from sources on the other side of the line, and the line itself is considered difficult terrain. If a creature is in the line of marching modrons when it is conjured or if a creature moves into that area on their turn, they must make a Dexterity saving throw If they fail, they take {@damage 4d10} bludgeoning damage and are pushed 10 feet in the direction the line is marching. If pushed to the end of the line, a creature is not pushed through the portal, which allows only modrons to pass through."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"At Higher When you cast this spell using a spell slot of 5th level or higher, the damage dealt by the line of modrons increases by {@dice 1d10} for each slot level above 4th."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"L"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Starlight Shroud",
+			"source": "HavenSpells",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"Ghostly starlight surrounds your body, casting bright light in a 10-foot radius and dim light for an additional 10 feet. The first time you take damage after casting this spell the starlight explodes outward and the spell ends. Each creature within 10 feet of you, other than you, must make a Dexterity saving throw, taking {@damage 2d10} radiant damage on a failed save, or half as much damage on a successful one."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher; the damage increases by {@dice 1d10} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST",
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Sticks to Snakes",
+			"source": "HavenSpells",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 50
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You transform a nonmagical pile of sticks into a swarm of poisonous snakes or one large stave into a constrictor snake for the duration.  It is hostile to all creatures.  ",
+				"If the objects are held by a creature, they may make a Wisdom save to resist the effect."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Aran's Perfect Instrument",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "any small part of the instrument you're creating, such as a viol's string"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"When you cast this an ethereal version of any musical instrument that you have proficiency with appears at your hands or right by your side, at your discretion. The instrument has a few unique properties: ",
+				"• It can created with any special tunings or customizations that you see fit. ",
+				"• It is {@condition invisible} to all creatures but you. ",
+				"• It is immaterial and cannot interact with any objects or creatures, except for you and any items you are holding. ",
+				"• When played by you, all creatures can hear it normally, even though they cannot see it."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Flame Arrows (Revised)",
+			"source": "HavenSpells",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You touch a group or container of ammunition. When a target is hit by a ranged weapon attack using any amount of ammunition affected by this spell, the target takes an extra {@damage 1d6} fire damage. The spell's magic ends on the ammunition used when it hits or misses, and the spell ends when twelve attacks with the ammunition have made."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the number of attacks you can use with this spell increases by two for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			}
+		},
+		{
+			"name": "Draconic Strike",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell’s range, otherwise the spell fails. You may use your spellcasting ability modifier, instead of Strength or Dexterity, for attack and damage.",
+				"Choose acid, cold, fire, lightning, or poison. On a hit, the target suffers the attack’s normal effects, and the damage of the attack changes to the type you chose."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell deals additional damage when you reach higher levels. At 5th level, the melee attack deals an additional {@damage 1d8} damage of the type you chose. The damage increases by a {@dice d8} at 11th and 17th levels."
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"poison"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Frost Breath",
+			"source": "HavenSpells",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"As you hold your open palm under your chin, you exhale deeply and a thin sheet of cold wind shoots forth from your mouth. Each creature in a 15-foot cone must make a Constitution saving throw. A creature takes {@damage 2d8} cold damage on a failed save, or half as much damage on a successful one. Creatures that fail their saving throw also have their speed reduced by 10 feet until the end of their next turn."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for every slot level above 1st"
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Ice Shards",
+			"source": "HavenSpells",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a drop of water"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create ten tiny ice shards on your space. They float in the air and orbit you for the spell's duration. When you cast the spell —and as a bonus action on each of your turns thereafter— you can expend one of the shards, sending it violently towards a creature of your choice within 30 feet of you. You make a ranged spell attack roll against the target creature. On a hit, the creature takes {@damage 1d4} piercing damage and {@damage 1d8} cold damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by {@dice 1d8} for each two slot levels above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold",
+				"piercing"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjure Ice Beast",
+			"source": "HavenSpells",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a sapphire worth at least 200gp",
+					"cost": 20000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a beast made completely of ice and snow in an unoccupied space that you can see within range. This creature uses the Ice Beast stat block. When you cast the spell, choose an form: Serpent, Canine, or Feline. The creature physically resembles an animal of your choice, which also determines the abilities and attacks in the creature's stat block. ",
+				"The creature disappears when it drops to 0 hit points or when the spell ends. The creature is friendly to you and your companions for the spell's duration. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys verbal commands that you issue to it (no action required by you). If you don't issue any, it defends itself but otherwise takes no action."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the creature assumes the higher level for that casting wherever it uses the spell's level in its stat block."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Hypothermia",
+			"source": "HavenSpells",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You select a creature within range and cold permeates its body. The creature must make a constitution saving throw. On a failed save, the creature has disadvantage on attack rolls, its speed is reduced by 10 feet, and takes {@damage 1d6} cold damage at the start of each of its turns. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends. Creatures immune to cold damage automatically succeed on their saving throws to resist this spell"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you can target an additional creature for each slot level higher than 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Icelance",
+			"source": "HavenSpells",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a quartz worth at least 100 gp",
+					"cost": 10000
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create a sharp, spear-like ice which you throw on a creature within range. Make an attack roll against the target. On a hit, the target takes {@dice 4d6} piercing and {@damage 4d6} cold damage and is visibly dazed until the end of its next turn. Until then, the creature can't take reactions, its speed is halved and it has disadvantage on all its attack rolls and ability checks, as well as on its Dexterity saving throws and its Constitution saving throws to maintain concentration."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, both the piercing and cold damage increase by {@dice 1d6} for each spell slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold",
+				"piercing"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Swirling Snowstorm",
+			"source": "HavenSpells",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a snowflake"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"When you cast this spell, a brief violent snowstorm manifests around you you in a 20-foot radius. Each creature in the area other than you must make a Dexterity saving throw. On a failed save, the creature takes {@damage 6d6} cold damage, and it is knocked {@condition prone}. On a successful save, the creature takes half as much damage and isn't knocked {@condition prone}."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d6} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Frozen Stalagmites",
+			"source": "HavenSpells",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small frozen needle"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"As you stomp your foot on the ground, a wall of frozen stalagmites emanates from you in a direction you choose and lasts for the duration. You can make a straight wall up to 60 feet long, 5 feet high, and 10 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain. ",
+				"When the wall appears, each creature within its area must make a Dexterity saving throw. Furthermore, the first time a creature enters the wall on a turn or ends its turn I there, the creature must make a Dexterity saving throw In either case, on a failed save, a creature takes {@dice 3d6} piercing and {@damage 3d6} cold damage, or half as much damage on a successful save."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the cold damage increases by {@dice 1d6} for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold",
+				"piercing"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"W"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Hailstorm",
+			"source": "HavenSpells",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create four hailstones and hurl them at targets within range. You can hurl them at one target or several. Make a ranged spell attack for each hailstone. On a hit, the target takes {@dice 2d4} bludgeoning and {@damage 2d4} cold damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, you create one additional hailstone for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning",
+				"cold"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Freeze",
+			"source": "HavenSpells",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"One creature you can see within range begins to freeze inside-out. The target must make a Constitution saving throw. It takes {@damage 8d6} cold damage on a failed save, or half as much damage on a successful one. On a failed save, the target also continues to freeze for the spell's duration. At the end of each of its turns, the target repeats the saving throw. It takes {@damage 4d6} cold damage on a failed save, and the spell ends on a successful one. If damage from this spell kills a target, the target is {@condition petrified} and turned into a frozen statue. If the creature is physically broken or thawed while frozen, it suffers from similar deformities if it reverts to its original state."
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"conditionInflict": [
+				"petrified"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Blizzard",
+			"source": "HavenSpells",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A swirling blizzard appears in a 30-foot radius centered on a point you can see within range. Until the spell ends, that area is difficult terrain, and when a creature enters the spell's area for the first time on a turn or starts its turn there, that creature must succeed on a Strength saving throw or take {@damage 5d6} cold damage and be knocked {@condition prone}."
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Glacial Prison",
+			"source": "HavenSpells",
+			"level": 6,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You attempt to entomb a creature within a solid block of ice. One creature you can see within range must make an Strength saving throw. On a successful save, the target takes {@damage 5d10} cold damage, and the spell ends. On a failed save, the target takes {@damage 5d10} cold damage and is encased in a thick block of ice that is transparent but allows nothing to physically pass through it. The target is {@condition restrained} for the duration and takes {@damage 3d10} cold damage at the end of each of its turns. ",
+				"The block of ice can be broken by taking damage. It is an object that has AC 15 and 50 hit points and is vulnerable to fire damage. Once the the target is freed, the spell ends."
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Heartfreeze",
+			"source": "HavenSpells",
+			"level": 7,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an ice cube"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"By making a fist, your eyes turn white but for a moment and the target's heart is frozen. The target must make a Constitution saving throw. On a failed save, the target takes {@damage 8d12} cold damage and suffers two levels of {@condition exhaustion}. On a successful save, the target takes half as much damage and suffers no additional effects.",
+				"A creature that has {@condition exhaustion} from this spell can make a constitution saving throw at the end of each of its turns. On a success, it lowers its {@condition exhaustion} level caused by this spell by one."
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"conditionInflict": [
+				"exhaustion"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Polar Ray",
+			"source": "HavenSpells",
+			"level": 8,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A blue-white ray of freezing air and ice springs from your hand. Make a ranged spell attack against the target. On a hit, the target takes {@damage 10d6 + 50} cold damage"
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Frostfell",
+			"source": "HavenSpells",
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Choose a point you can see on the ground within range. The area in a 60-foot cube centered on that point becomes frigid and icy, immediately dropping the temperature to extreme cold Each creature in that area when the spell is cast must make a Constitution saving throw. A creature takes {@damage 15d12} cold damage on a failed save, or half as much damage on a successful one. If this damage reduces the target to 0 Hit Points, it is instantly {@condition petrified} and turned into a frozen statue. Additionally, the ground in that area is covered with snow and slick ice and becomes difficult terrain. When a creature enters the spell's area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failed save, it falls {@condition prone}."
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"dexterity",
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"C"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Glacial Blade",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and cold permeates its body until the start of your next turn. If the target makes an attack roll before then, it immediately takes {@damage 1d6} cold damage, and the spell ends."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell's damage increases when you reach higher levels. At 5th level, the melee attack deals an extra {@damage 1d6} cold damage to the target, and the damage the target takes for attacking increases to {@dice 2d6}. Both damage rolls incsease by {@dice 1d6} at 11th level and 17th level."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Godsmite",
+			"source": "HavenSpells",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"The next time you hit a creature with a weapon attack before this spell ends, your weapon floods with godslaying power, and the attack deals an additional {@damage 2d8 + 10} radiant damage. Additionally, for this attack and until the end of the current turn, the target is vulnerable to radiant damage, even if it was resistant or immune. Once the current turn ends, the spell ends with it."
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Colossification",
+			"source": "HavenSpells",
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a willing beast or familiar"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"Touching a willing beast or familiar and gently whispering words of power, you make it grow to incredible proportions. It gains the following benefits while the spell lasts.",
+				"-The touched creature become Gargantuan. If there isn't enough room for it to increase size, it makes a Strength (Athletics) check to break through the surrounding material. It otherwise attains the maximum possible size in the space available.",
+				"-Its current and maximum hit points increase to 200.",
+				"-Its Strength and Constitution scores increase to 26.",
+				"-Its reach becomes 15 feet.",
+				"-It can take the Attack action.",
+				"-If it already has an attack, that attack now deals 34 ({@damage 4d12 + 8}) damage.",
+				"-Whether or not it originally had an attack, it can perform a bite attack that deals 34 ({@damage 4d12 + 8}) piercing damage. If the target is a creature, it is {@condition grappled} (escape DC 20). Until this grapple ends, the target is {@condition restrained}, and the familiar can't bite another target.",
+				"-As an action, the familiar can make one bite attack against a Large or smaller creature it is grappling. If the attack hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the familiar, and it takes 28 ({@damage 8d6}) acid damage at the start of each of the familiar's turns. If the familiar takes 30 damage or more on a single turn from a creature inside it, the familiar must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the familiar.",
+				"-It has advantage on Strength checks and Strength saving throws.",
+				"-It adds your proficiency bonus to its attack rolls, Strength checks, AC, and saving throws.",
+				"-Its attacks deal double damage against objects and structures and count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
+				"-It becomes immune to being {@condition charmed} and {@condition frightened}.",
+				"-Once during the spell, it can choose to succeed on a saving throw.",
+				"-It does not disappear when reduced to 0 hit points. Instead, it makes death saving throws like you do. It disappears if it has three failed death saving throws.",
+				"-It ignores difficult terrain as it simply powers through it.",
+				"While transformed, your familiar cannot be dismissed and then resummoned. If any creatures are inside it when the spell ends, they fall {@condition prone} within in a space which the familiar previously occupied. You can end the spell early as an action."
+			],
+			"conditionInflict": [
+				"restrained",
+				"grappled",
+				"blinded"
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"fluff": {
+				"entries": [
+					"\"MEOW,\" it said, and the earth trembled."
+				]
+			}
+		},
+		{
+			"name": "Unstable Frost",
+			"source": "HavenSpells",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You cast a ray of frost aimed at a target within 60ft of you. Make a ranged spell attack On a hit the target takes {@damage 1d10} cold damage and must succeed a Strength saving throw or be {@condition grappled} by tendrils of ice until the end of your next turn. If you cast this spell at a target already {@condition grappled} by this spell and hit, it is considered a critical hit and the ice restraining the target shatters, freeing them."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by {@dice 1d10} for each spell slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Iceberg Throw",
+			"source": "HavenSpells",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an ice cube"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You summon a block of ice that flies through the air at breakneck speed towards a target. Make a ranged spell attack roll On a hit the target takes {@damage 2d8} cold damage and {@damage 2d10} bludgeoning damage, and all creatures within a 15ft cone behind the target must make a Dexterity saving throw or take {@damage 4d4} cold damage on a failure, as the block shatters in pieces."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the initial bludgeoning damage increases by {@dice 1d10} and the additional cold damage by {@dice 2d4} for every spell slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning",
+				"cold"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST",
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Ice Block",
+			"source": "HavenSpells",
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "that you take when you take damage that should reduce you to 0hp or lower, but not kill you outright."
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You encase yourself in ice; you gain immunity to all damage, including the triggering damage, the ice covering you. While in the ice you are immune to all damage, but you are {@condition restrained} and {@condition incapacitated}. The ice melts at the end of your next turn."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Stalagmite",
+			"source": "HavenSpells",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a shard of everlasting ice worth 500 gp",
+					"cost": 50000
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Spikes of ice emerge from the ground in a point within range. All creatures within a 15ft radius must make a Dexterity saving throw. A creature that fails the save takes {@damage 3d6} cold damage and {@damage 2d6} piercing damage and is Restrained as the ice stalagmites impale it. On a success it takes half as much damage and isn't Restrained. A Restrained creature can repeat the save at the start of each of its turn, ending the effect on a success, or taking an additional {@damage 2d6} piercing damage on a failure."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the radius increases by 5ft for every spell slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold",
+				"piercing"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Bound Weapon",
+			"source": "HavenSpells",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "either a pinch obsidian dust, a dried elm root, or a finger bone from a small hmanoid"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You reach into one of the inner planes and draw out a weapon made from the raw stuff of that plane: inky darkness for the Shadowfell, living roots for the Feywild, or blurry translucent waves for the ethereal plane. For the duration, or until you dismiss the weapon (no action required), you are equipped with any simple or martial melee weapon that does not have the heavy or two handed property. You have proficiency with the bound weapon for the duration. You do not need to hold your weapon for the duration; however if the weapon is ever more than 30 feet away from you for more then 6 seconds, than the weapon dissipates into nothing. Regardless of the weapon you are wielding, the weapon deals force damage instead of it’s regular damage type. When you make a melee weapon attack with your bound weapon you can use your spellcasting modifier, instead of your Strength or Dexterity modifier, for the attack and damage rolls.",
+				"Once per turn, when you successfully hit a creature with your bound weapon, you may deal an additional {@damage 1d4} force damage.",
+				"You can only have one bound weapon summoned at a time. If you cast this spell again, your original bound weapon dissipates into nothing"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd or 4th level, the additional damage increases to {@dice 2d4} and you no longer need to concentrate to maintain this spell. When you cast this spell using a spell slot of 5th or 6th level, the additional damage increases to {@dice 3d4} and the duration increases to 1 hour. When you cast this spell using a spell slot of 7th or 8th level, the additional damage increases to {@dice 4d4} and the duration increases to 24 hours. When you cast this spell using a spell slot of 9th level, the additional damage increases to {@dice 5d4}, and the weapon lasts until dispelled."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Gentlewood's Combat Glyph",
+			"source": "HavenSpells",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a small polished stone inscribed with warding runes in arcane ink, worth at least 10 gp, which the spell consumes",
+					"consumed": true,
+					"cost": 1000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You create a glowing 10-foot-radius glyph composed of dozens of intricate lines on a flat surface that can fit it within range. Choose one of the following glyph types:",
+				"Acid: When the glyph is triggered, a streaming wave of acid erupts outwards. Each creature within a 20 foot radius sphere centered on the glyph must make a Dexterity saving throw. A creature takes {@damage 5d6} acid damage on a failed save, or half as much damage on a successful one. If a creature fails it’s save then it is coated in acid, and takes {@damage 1d4} acid damage at the start of each of it’s turns, until it uses its action to wipe or wash the acid away.",
+				"Cold: When the glyph is triggered, the air snap freezes around the glyph, freezing creatures in place. Each creature within a 20 foot radius sphere centered on the glyph must make a Constitution saving throw. A creature takes {@damage 4d6} cold damage and is {@condition petrified} until the end of your next turn on a failed save, or takes half as much damage and is not {@condition petrified} on a successful one.",
+				"Fire: When the glyph is triggered, a blinding flair of scorching flame bursts forth from the glyph. Each creature within a 20 foot radius sphere centered on the glyph must make a Dexterity saving throw. A creature takes {@damage 5d6} fire damage and is {@condition blinded} until the end of your next turn on a failed save, or takes half as much damage and is not {@condition blinded} on a successful one.",
+				"Poison: When the glyph is triggered, a burst of noxious gas unfurls. Each creature within a 20 foot radius sphere centered on the glyph must make a Constitution saving throw. A creature takes {@damage 6d6} poison damage and is {@condition poisoned} for 1 minute on a failed save, or takes half as much damage and is not {@condition poisoned} on a successful one.",
+				"Thunder: When the glyph is triggered, a thunderous clap of force cracks the air around the glyph. Each creature within a 20 foot radius sphere centered on the glyph must make a Strength saving throw. A creature takes {@damage 5d6} thunder damage and is knocked {@condition prone} on a failed save, or takes half as much damage and is not knocked {@condition prone} on a successful one. Any surface within the glyph’s radius becomes difficult terrain for 1 minute.",
+				" For the duration of the spell if a creature moves from or through a space within 5-foot of the glyph, or ends its turn within that area, the glyph is triggered."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage the glyph deals increases by {@dice 1d6} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"fire",
+				"poison",
+				"thunder"
+			],
+			"conditionInflict": [
+				"petrified",
+				"blinded",
+				"poisoned",
+				"prone"
+			],
+			"savingThrow": [
+				"strength",
+				"dexterity",
+				"constitution"
+			],
+			"areaTags": [
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mute",
+			"source": "HavenSpells",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a square of black satin"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You remove excess sound that your own body makes. For the duration any sound that you, your equipment or any items you are holding would produce is entirely muted, and cannot be detected via hearing."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjure Companion",
+			"source": "HavenSpells",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "Two rings worth 25g each, uniquely paired and corresponding to the creature type summoned",
+					"cost": 2500
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"This spell creates one creature that uses the companion statistics found below. While you wear the paired ring, the creature obeys your commands and acts immediately after your initiative step in combat. The creature may only take the Dash, Disengage, Hide, or Dodge action unless the summoner has used a bonus action to verbally command another action. The creature can telepathically communicate emotions and feelings to their summoner while within 100 ft.",
+				"The creature lasts until the end of your next long rest or until it reaches 0 hit points, at which it dissolves and leaves the component ring in its place. The creature dissolves if you begin casting this spell again while the creature is still alive.",
+				"The creature has a {@dice d8} hit die equal to the level the spell is cast at. The DC for saves against the Companion's abilities is 10 + the spell slot expended.",
+				"When you create the creature, consult the ring's creature type on the table below and apply the specified modifications to the stat block. The creature's appearance is up to you."
+			],
+			"damageInflict": [
+				"acid",
+				"bludgeoning",
+				"cold",
+				"fire",
+				"lightning",
+				"poison",
+				"psychic",
+				"radiant",
+				"thunder"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/WSYAnc7.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Versatile Disk of Force",
+			"source": "HavenSpells",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a silver disk worth 50gp",
+					"cost": 5000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"This spell creates a circular plane of force, 3 feet in diameter and 1 inch thick, that appears in a unoccupied space of your choice that you can see within range. The disk remains for the duration, and it moves at your command. When you cast the spell and as a bonus action on your subsequent turns, you can move the disk up to 30 feet and then cause one of the following effects with it.",
+				"Carry. The disk can hold up to 500 pounds or one medium or smaller creature. If more weight is placed on it or an additional creature gets on it, the spell ends, and everything on the disk falls to the ground.",
+				"Shield. The disk moves to protect a creature of your choice until you give the disk a different command. The disk provides the target half cover.",
+				"Push. The disk attempts to push a medium or smaller creature within 5 feet of it in a direction you choose. The target must make a Strength saving throw. On a failure, the disk pushes the target up to 15 feet. The disk moves with the target to remain within 5 feet of it."
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mercurial Weapon",
+			"source": "HavenSpells",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a drop of mercury"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a shimmering weapon of translucent force that hovers within range that lasts for the duration. When you cast the spell and as a bonus action on your subsequent turns, you can move the weapon up to 20 feet and choose one of the following forms with it.",
+				"Greatsword. The weapons takes the form of a greatsword. Make a melee spell attack against a target of your choice within 5 feet of the weapon. On a hit, the target takes force damage equal to {@dice 2d6} + your spellcasting ability modifier.",
+				"Lance. The weapon takes the form of a lance. Make a melee spell attack against a target of your choice within 10 feet of the weapon. On a hit, the takes {@damage 1d10} force damage.",
+				"Maul. The weapon takes the form of a maul. Make a melee spell attack against a target of your choice within 5 feet of the weapon. On a hit, the target takes {@damage 2d6} force damage and must make a Strength saving throw if it is size Large or smaller. On a failure, the creature is knocked {@condition prone} or pushed 5 feet away from the weapon."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage from the greatsword and maul options increase by {@dice 2d6} and the damage from the lance increases by {@dice 1d12} for every two slot levels above the 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Stop Hitting Yourself!",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You command a creature you can see within range to stop hitting itself, as you compel it to hit itself. The target must succeed on a Wisdom saving throw or take {@damage 1d10} bludgeoning damage as it coldclocks itself with an appendage or the blunt end of a weapon. ",
+				"Creatures without appendages are instead compelled to hurl themselves at the nearest solid surface (generally the floor), taking the same amount of damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"M Higher Levels. The spell's damage increases by one die when you reach 5th level ({@dice 2d101} 11th level ({@dice 3d101} and 17th level ({@dice 4d101}"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Soraing Vines",
+			"source": "HavenSpells",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				},
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you are falling and are within 30 feet of plants or a solid surface"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a limb, root, vine, or other length of plant material"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Vines magically sprout from a solid surface (such as the ground or a wall) or plants within 30 feet of you and wrap themselves securely around your torso, leaving your arms and legs unhindered. The vines shift with you, growing and retracting as you move from plant to plant or along the ground or other surface, and if any of the vines are destroyed, they are immediately and seamlessly replaced by more vines. If you cast this spell as a reaction, the vines catch you where you are, stopping your fall, and you take no falling damage. For the duration, as long as you are within 30 feet of a solid surface or plants, you have a flying speed of 40 feet, which can't be reduced by nonmagical means.",
+				"In addition, you can't be knocked {@condition prone}, and you have advantage on saving throws made against effects that would push you or pull you. When the spell ends, the vines gently lower you back to the ground if you are aloft."
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Sunlight Javelin",
+			"source": "HavenSpells",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create a spear of bright power and hurl it at a creature within range. Make a ranged spell attack against the creature. On a hit, it takes {@dice 3d12} lightning and {@damage 3d12} radiant damage"
+			],
+			"damageInflict": [
+				"lightning",
+				"radiant"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Arcane Refocus",
+			"source": "HavenSpells",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "an exquisite arcane focus worth at least 200gp",
+					"cost": 20000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You float the exquisite arcane focus and use it to channel you magic. Immediately and as a bonus action while the spell lasts, you can movie it up to 30 feet in any direction.",
+				"You can count the focus as you for the purposes of spells' ranges that aren't self. For example, the spell sleep has a 90 foot range, and you could cast it up to 90 feet away from you or from the focus, whichever you choose.",
+				"The focus can't move beyond this spell's range, and the spell ends if it exits it. It has a AC equal to your spell casting score, and if hit, is pushed 5 feet away from the attacker. It is immune to all damage and otherwise uses your statistics when necessary."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the spell's range increases by 15 feet for each slot level above 2nd."
+					]
+				}
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Tumbleweed",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You put your hand on a ranged weapon that uses ammunition, such as a shortbow, longbow, crossbow, or gun and make a remark regarding the current situation. At a point within range halfway between you and an enemy, a false breeze stirs up some dust and blows a tumbleweed 10ft across your path before it disappears. You also gain advantage on your next Intimidation roll within the next minute."
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Veneer",
+			"source": "HavenSpells",
+			"level": 5,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bit of fleece"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You cover a 90-foot cube with thin images. The images can only be superimposed up to I inch above solid surfaces or objects. The images must not be a creature and must appear solid. The images travel with the things they are superimposed on. A thing losses its part of the illusion if it travels outside the 90-foot cube.",
+				"The illusion also includes audible, tactile, and olfactory elements that are appropriate to the things being depicted. For example, if you turn a stone floor to wood it will creak when walked over; feel smooth instead of bumpy when touched and the scent of wood will permeate the air. However, you cannot make an area more or less harmful than it already is. You can't create an object sharp enough to do piercing damage, an object soft enough to remove piercing damage, or a sound loud enough to deafen a creature. You also can't make things weaker or stronger than they actually are.",
+				"Contradictory sensations, such as cushioning doing piercing damage, are likely to cause a creature to see through the illusion. Alternatively, if a creature carefully examines the illusion, they can attempt an Intelligence (Investigation) check against your save DC to disbelieve it. A creature who discerns the illusion for what it is, sees it as a vague image superimposed on the area. However, even when the illusion is revealed, all other elements of the illusion remain, so while the creature is aware of the illusion's presence, the creature can still physically interact with the illusion."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"If you cast this spell using a spell slot of 6th level or higher, the spell lasts for 24 hours (6th level) 10 days (7th level), 30 days (8th level) or 1 year (9th level)"
+					]
+				}
+			],
+			"abilityCheck": [
+				"intelligence"
+			],
+			"areaTags": [
+				"C"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Eye of the Storm",
+			"source": "HavenSpells",
+			"level": 9,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Speaking ancient primordial words of power, you call into existence a storm to rival the power of the Elder Tempest. Dark storm clouds form in the sky 500 feet above you, with lightning crackling, thunder booming, rain pouring down, and wind roaring in a 500 foot tall, 300 foot radius cylinder centered on you. You are immune to all the effects of this spell, as you stand in the eye of the storm. On the turn you cast this spell, and on each of your turns for the rest of the duration, you can use a bonus action to activate one of the following effects. If an effect is active for a full minute, it does not grow any stronger, but you can still activate it every turn for the 10th round effect.",
+				"Cloudburst. The area in the cylinder becomes heavily obscured as fantastically heavy rains begin to fall around you. Additionally, ranged attacks that pass through the area of the cylinder suffer a -2 penalty to their attack rolls, and any spells or abilities that deal fire damage to a creature deal one die less of damage. Each consecutive turn you activate this effect, the penalty to ranged attack rolls increases by an additional -2, and the penalty to fire damage increases by one die. Finally, while this effect is active, the area of the spell counts as difficult terrain.",
+				"Electrical Storm. When you activate this effect, choose a point within the cylinder for lightning to strike. Each creature within 10 feet of that point must make a Dexterity saving throw, taking {@damage 5d10} lightning damage on a failed save, and half as much damage on a successful one. Each consecutive turn you activate this effect, you choose one additional point, calling down an additional lightning strike.",
+				"Hurricane. Each creature in the cylinder must succeed on a Strength saving throw or be pushed 10 feet in a counterclockwise direction around you, or half as far on a success, as incredibly powerful winds begin to circle around you. Each consecutive turn you activate this effect, the distance pushed increases by 10 feet in a failure, and 5 feet on a success. If a creature is pushed 50 or more in a single turn by this effect, it is lifted into the air by the winds, and it rises at a rate equal to its horizontal movement. Any airborne creature without a flying speed automatically fails its saving throws against this effect, and falls on a turn you don't activate it. Finally, while this effect is active, the area of the spell counts as difficult terrain.",
+				"Thunderstorm. Each creature in the cylinder must make a Constitution saving throw as the loudest thunder you've ever heard booms throughout the area. On a failed saving throw, the creature takes {@damage 1d8} thunder damage, and is {@condition deafened} until the beginning of your next turn. On a success, the creature takes half as much damage, and is not {@condition deafened}. Each consecutive turn you activate this effect, the damage increases by {@dice 1d8}. If a creature that succeeded on its saving throw takes 20 or more thunder damage from this effect, it is {@condition deafened} until the beginning of your next turn. Additionally, when you activate this effect, the thunder can be heard up to 3 miles away.",
+				"When you cast this spell, you can choose to have the eye of the storm extend up to 15 feet out from you, granting immunity to the effects of this spell to all creatures within the eye. ",
+				"Finally, if you concentrate on this spell for the full duration, you lose control of it, and it becomes anchored to the spot you are standing when the spell ends for the next 24 hours, recreating the effect that you ended with, but not getting any more intense. If it was an electrical storm, the lightning strikes occur in random places throughout the area. If you cast the spell in this way, in the same place, every day for a year, the storm lasts indefinitely, and it can only be ended by a with spell of a 9th-level dispel magic."
+			],
+			"damageInflict": [
+				"lightning",
+				"thunder"
+			],
+			"conditionInflict": [
+				"deafened"
+			],
+			"savingThrow": [
+				"strength",
+				"dexterity"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Tempest",
+							"source": "PHB"
+						}
+					}
+				]
+			},
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/552694697676767242/721636204558155796/image0.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Starbomb",
+			"source": "HavenSpells",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a crystal formed in darkness"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"You create a mote of energy and direct it to a point you can see within range. If there is a creature at that point make a ranged spell attack against it. On a hit, the creature takes {@damage 3d6} fire damage. Upon reaching the point, the mote explodes in a 15 foot radius. All creatures in the explosion must make a Constitution saving throw, taking {@damage 5d6} radiant damage on a failed save and half that on a successful save.",
+				"For the duration, the area affected by the explosion becomes bright light. Any creature or object in this light can't benefit from being {@condition invisible}."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, both sources of damage increase by {@dice 1d6} for every level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire",
+				"radiant"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST",
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Light",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Celestial",
+							"source": "XGE"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Electric Arc",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A stroke of lightning forming a line 15 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must succeed on a Dexterity saving throw or take {@damage 1d8} lightning damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"The spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"L"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Forked Lightning",
+			"source": "HavenSpells",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create two arcs of lightning that streak towards two different targets. Make a ranged attack roll for each arc. On a hit the target takes {@damage 2d8} lightning damage. If both targets are hit, another arc of lightning forms in between them, they each take an extra {@damage 1d8} lightning damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage of each initial arc increases by {@dice 1d8} for each slot level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			}
+		},
+		{
+			"name": "Roaring Retaliation",
+			"source": "HavenSpells",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take in response to being damaged by a creature within 10 feet of you that you can see"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You release a thunderous explosion that is audible within 300 feet of you. All creatures within 10ft of you must make a Constitution saving throw or take {@damage 2d8} thunder damage on a failure, and half as much on a success."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Thunder-Fists",
+			"source": "HavenSpells",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You imbue your fists with thunderous energy, they now count as natural weapons that you are proficient with and that deal {@damage 1d10} thunder damage on a hit. Every time you strike a creature with those weapons, you can choose to push it back 5ft if it is no more than 2 sizes larger than you."
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Storm Hammer",
+			"source": "HavenSpells",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small hammer made of metal"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You point your finger at an area that you can see within 150ft of you. A Colossal hammer of lightning crashes down from the heavens in that location. All creature within a 30ft radius of that point must make a dexterity saving throw or take {@damage 4d8} lightning damage and {@damage 4d8} bludgeoning damage, or half as much on success.",
+				"The area affected by the spell becomes scorched and unstable, it becomes difficult terrain for the next 24 hours. This spell deals double damage to Object and structures."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the lightning damage increases by {@dice 1d8} for each slot level above 5th."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning",
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Energy Bastion",
+			"source": "HavenSpells",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A 10-foot-radius sphere of energy emanates around you. Choose one of the following damage types: acid, cold, fire, lightning, necrotic, poison, radiant, or thunder. Non-hostile creatures (including you) have resistance to chosen damage type while in the sphere, and whenever a hostile creature enters the sphere for the first time on a turn or ends its tum there. It takes damage of that type equal to your spellcasting ability modifier. Until the spell ends, the sphere moves With you, centered on you.",
+				"In addition, you can use a bonus action to fire a beam of energy from the sphere. The beam extends in a 5-foot-wide, 60-foot-long line from the exterior of the sphere in a direction you choose. Each creature in the line must make a Dexterity saving throw, taking {@damage 2d8} damage of the chosen type on a failed save, or half as much damage on a successful one."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage from each beam of energy increases by {@dice 1d8} for each slot level above 5th"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"necrotic",
+				"poison",
+				"radiant",
+				"thunder"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"S",
+				"L"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Ancestral Barrier",
+			"source": "HavenSpells",
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"An ethereal barrier of vibrant red light surrounds you. If, at any point during the duration of this spell, you are hit by a weapon attack, are targeted by a spell, or fall from a ledge, you can spend a reaction to strengthen the power of the barrier and become immune to all of the damage of the incoming attack. You can activate this feature of the spell after the circumstances occur but before you know the amount of damage taken.",
+				"Once you have strengthened the barrier in this way three times, the spell ends."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Ancestral Spark",
+			"source": "HavenSpells",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You unleash a scattering of lightning that arcs in a 30-foot sphere originating from you. Every enemy within range that you can see must make a Dexterity saving throw, taking {@damage 4d6} lightning damage on a failure and half on a success.",
+				"If a creature fails their saving throw by 5 or more, they are also {@condition stunned} until the end of their next turn."
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Black Hole",
+			"source": "HavenSpells",
+			"level": 8,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You condense gravity into an immeasurably dense orb at a point you can see within the spell's range. The orb fills a 10-foot radius sphere around it with darkness, which no light, magical or mundane, can illuminate.",
+				"When a creature enters within 30 feet of the orb for the first time on a turn or starts its turn there, it must make a Strength saving throw or be pulled 10 feet toward the orb. When a creature enters within 5 feet of the orb for the first time on a turn or starts its turn there, it must make a Constitution saving throw, taking {@damage 10d10} bludgeoning damage on a failed save or half as much on a successful one.",
+				"The orb's gravitation makes moving away from it incredibly difficult. While within 10 feet of the orb, a creature moving away from the orb must spend 4 feet of movement for every 1 foot it moves. While within 30 feet of the orb, a creature moving away from the orb must spend 2 feet of movement for every 1 foot it moves.",
+				"In addition, unsecured objects that are completely within the area of effect are automatically pulled into orb. Small nonmagical objects that come within 5 feet of the orb are immediately destroyed"
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength",
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Celestial Pyre",
+			"source": "HavenSpells",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "100 lbs of firewood, which the spell consumed",
+					"consumed": true
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"trigger",
+						"dispel"
+					]
+				}
+			],
+			"entries": [
+				"You can cast this spell only at night. You memorialize a dead creature you touch, turning it into a constellation, provided that it has been dead no longer than 1 day. The target's body dissolves into stardust and rises into the sky.",
+				"The spell effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don't count against the time limit of spells such as raise dead. A spell that targets the dead but usually require a body can be cast targeting this constellation instead, provided the spell is cast at night and the caster can see the target's constellation. If the target of this spell is returned to life, this spell ends and the constellation fades."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Dazzling Gleam",
+			"source": "HavenSpells",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You release a burst of light. Each creature within 30 feet of you must make a Constitution saving throw. On a failed save, a creature takes {@damage 3d8} radiant damage and is {@condition blinded} until the end of its next turn. On a successful save, it takes half as much damage and is not {@condition blinded}."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for each slot level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Field of Stars",
+			"source": "HavenSpells",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You conjure into existence four motes of starlight, each in an unoccupied space you can see within range. Each mote provides dim light in a 5-foot radius and lasts for the duration or until it explodes.",
+				"When a creature moves within 5 feet of a mote or moves away from a mote within 5 feet of it, the mote explodes. Each creature within 5 feet of the mote must make a Dexterity saving throw. A creature takes {@damage 2d6} radiant damage on a failed save, or half as much damage on a successful one."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, you create one additional mote for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Gleam-Eye",
+			"source": "HavenSpells",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You imbue your eyes with an endearing twinkle that distracts even the most hardened of hearts. When you cast this spell, you can target a creature within 30 feet of you that you can see with a brilliant wink. The target must make a Wisdom saving throw or have disadvantage on the next attack roll or ability check they make before the start of your next turn. On each of your turns until the spell ends, you can use your bonus action to repeat this effect, targeting the same creature or a different one.",
+				"A creature that can't see you or that can't be {@condition charmed} is unaffected by this spell."
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Golden Glow",
+			"source": "HavenSpells",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a golden orb worth 100gp, which the spell consumes",
+					"consumed": true,
+					"cost": 10000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You point at a spot within 30ft of you that you can see, a bright orb of sunlight takes form there. This orb emits bright light in a 20-foot radius and dim light for an additional 20 feet, the orb will hover 15ft above the ground unless you're pointing at a wall or ceiling.",
+				"When a creature enters the bright light for the first time on a turn or starts its turn there, it must make a Constitution saving throw. It takes {@damage 6d8} radiant damage on a failed save, or half as much damage on a successful one.",
+				"An undead makes its saving throw with disadvantage, and the spell deals maximum damage to it."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the spell deals an additional {@damage 1d8} damage for each slot level above 5th."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Gravity Pulse",
+			"source": "HavenSpells",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You concentrate gravity around your body. Each creature within 15 feet of you must make a Strength saving throw. On a failed save, a creature takes {@damage 2d8} bludgeoning damage and be pulled up to 10 feet toward you. On a successful save, it takes half as much damage and is not pulled toward you."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			}
+		},
+		{
+			"name": "Guiding Light",
+			"source": "HavenSpells",
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a piece of flint, which the spell consumes",
+					"consumed": true,
+					"cost": 1
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You can cast this spell only at night. You speak the name of a creature or location known to you to be the target of this spell. The target must be on the same plane of existence as you, and cannot be under more than 100 feet of dirt or stone. A shining star appears high in the sky above the target's location, visible only at night. Your familiarity with the target determines the accuracy of the star's location. The DM rolls {@dice d100} and consults the table.",
+				"Star Location",
+				"___",
+				"Target Familiarity | Mishap | Similar Target | Off Target | On Target",
+				"-------------| :---: | :---: | :---: | :---: | :---: |",
+				"Very familiar | 01-05 | 06-13 | 14-24 | 25-100",
+				"Seen casually | 01-33 | 34-43 | 44-53 | 54-100",
+				"Viewed once | 01-43 | 44-53 | 54-73 | 74-100",
+				"Description | 01-43 | 44-53 | 54-73 | 74-100",
+				"False description | 01-50 | 51-100 | — | —",
+				"Familiarity. ",
+				"\"Very familiar\" is a creature or place you have met with or been to very often, a creature or place you have carefully studied, or a creature or place you can see when you cast the spell. ",
+				"\"Seen casually\" is someone or someplace you have seen more than once but with which you aren't very familiar. ",
+				"\"Viewed once\" is a creature or place you have seen once, possibly using magic. ",
+				"\"Description\" is a creature or place whose location and appearance you know through someone else's description, perhaps from a map.",
+				"\"False description\" is a creature or place that doesn't exist. Perhaps you scried an illusion, or you are attempting to locate a familiar creature or location that no longer exists.",
+				"On Target. The star appears directly over the target's location.",
+				"Off Target. The star appear a random distance away from the target's location in a random direction. Distance off target is {@dice 1d10 × 1d10} percent of the distance between you and the target. For example, if the target was 120 miles away from you, and the DM rolled a 5 and 3 on the two {@dice d10}s, then the star would be off target by 15 percent, or 18 miles. The DM determines the direction off target randomly by rolling a {@dice d8} and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass.",
+				"Similar Target. The star appears over a different target that's visually or thematically similar to the target. Generally, the star appears over the closest similar target, but since the spell has no range limit, it could conceivably wind up anywhere on the plane.",
+				"Mishap. The star appears in your hands and then explodes. Each creature within 30 feet of the star must make a Dexterity saving throw. A creature takes {@damage 2d10} radiant damage on a failed save, or half as much damage on a successful one."
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Icy Ring",
+			"source": "HavenSpells",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a shard of ice or glass of water"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You form a 5-foot thick ring of dust and ice that circles around you, with the outer edge of the ring 10 feet away from you. When a creature enters the spell's area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. A creature takes {@damage 3d6} cold damage on a failed save, or half as much damage on a successful one.",
+				"As a bonus action on your turn, you can increase or decrease the ring's radius from you by 5 feet, to a maximum distance of 20 feet away from you. The ring retains its 5-foot thickness, but its radius grows or shrinks."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d6} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Illuminate",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You release a cloud of shimmering gas at a creature you can see within range. The creature must succeed on a Constitution saving throw or take {@damage 1d8} radiant damage, and has disadvantage on Dexterity (Stealth) checks and can't benefit from being {@condition invisible} until the start of your next turn."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"conditionInflict": [
+				"invisible"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Intensify Gravity",
+			"source": "HavenSpells",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a lead weight"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"This spell magnifies the gravity in a 30-foot-radius, 100-foot high cylinder centered on a point within range. For the spell's duration, everything within the spell's area becomes 10 times heavier. If the increase in a creature's carry weight exceeds 15 times its Strength score, it takes {@damage 1d6} bludgeoning damage at the start of each of its turns, its speed drops by 20 feet and it has disadvantage on ability checks, attack rolls, and saving throws that use Strength, Dexterity, or Constitution.",
+				"Arrows, bolts, and other ordinary projectiles that enter the spell's area drop to the ground and automatically miss."
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Ionizing Wind",
+			"source": "HavenSpells",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 40
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A blast of electrified wind erupts from your hands. Each creature in a 40-foot cone must make a Strength saving throw. On a failed save, a creature takes {@damage 6d8} lightning damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d8} for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Lucky Stars",
+			"source": "HavenSpells",
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a rabbit's foot or other lucky charm"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create three small stars that circle around your head. Whenever you make an attack roll, an ability check, or a saving throw, you can spend expend one star to roll an additional {@dice d20}. You can choose to expend one of your stars after you roll the die, but before the outcome is determined. You choose which of the {@dice d20}s is used for the attack roll, ability check, or saving throw.",
+				"You can also expend one star when an attack roll is made against you. Roll a {@dice d20}, and then choose whether the attack uses the attacker's roll or yours."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, you create one additional star for each slot level above 3rd."
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Meteor Strike",
+			"source": "HavenSpells",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"The next time you hit a creature with a weapon attack during the spell's duration, your weapon strikes with the momentum of a meteor. The attack deals an extra {@damage 1d6} fire damage, and the target must succeed on a Strength saving throw or be knocked {@condition prone} or pushed 5 feet away from you (your choice). A Large or larger creature has advantage on this saving throw."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by {@dice 1d6} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Moonfall",
+			"source": "HavenSpells",
+			"level": 8,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 500
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You materialize a minor moon from its place in the stars to use as an instrument of doom. A large stone moon of 100-foot radius appears 1500 feet above a point you can see within range. The spell fails if you can't see a point in the air where the moon could appear, or if you do not have a clear view of the sky.",
+				"The moon falls 500 feet at the start of each of your turns. Each creature in the moon's path as it falls must make a Dexterity saving throw. On a failed save, a creature takes {@damage 6d6} bludgeoning damage and is {@condition grappled} until the end of its next turn, pinned by the moon. On a successful save, a creature takes half as much damage and is pushed out of the moon's path, up to 100 feet away from the moon.",
+				"Once the moon collides with the ground, each creature within 100 feet of the point of collision takes {@damage 12d12} bludgeoning damage. The spell deals maximum damage to structures. The moon then break into pieces, leaving a 100-foot radius impact crater, which becomes difficult terrain until cleared, with each 5-foot-diameter portion requiring at least 1 minute to clear by hand."
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"PRM"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Night Sky",
+			"source": "HavenSpells",
+			"level": 9,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "miles",
+					"amount": 1
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"With a wave of your hand, you force the sky above you to clear and become night, in a radius of 1 mile. Within the spell's area, spells that can be cast only at night (such as create undead) can be cast regardless of time of day.",
+				"When you cast this spell, choose one of the following effects. On each of your turns until the spell ends, you can use your action to choose an effect, selecting the same effect or a different one.",
+				"Dreamland. The terrain within the spell's area shapes to your desires. The tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to see through the illusion. If the difference isn't obvious by touch, a creature carefully examining the illusion can attempt an Intelligence (Investigation) check against your spell save DC to disbelieve it. A creature who discerns the illusion for what it is, sees it as a vague image superimposed on the terrain. You can end this effect as an action on your turn.",
+				"Grim. You imbue false life into a corpse you can see within the spell's area. It rises as a skeleton if you choose a pile of bones, or a zombie if you choose a fleshy corpse. On each of your turns, you can use an action to mentally command any creature you made with this spell if the creature is within the spell's area (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete. The creature reverts to a corpse or pile of bones when the spell ends.",
+				"Shooting Star. A star streaks across the sky. One creature of your choice who can see the star gains 25 temporary hit points. While the creature has these hit points, it immune to fear.",
+				"Slumber. You inflict drowsiness on a creature of your choice within the spell's area. If the target has less than 50 hit points, it fall {@condition unconscious} until the spell ends, it takes damage, or someone uses an action to shake or slap it awake.",
+				"Star Storm. Ten stars fall from the sky. Each star hits a creature of your choice within the spell's area. Each star deals {@damage 1d4 + 1} force damage to its target (roll damage for each star separately). The stars all strike simultaneously, and you can direct them to hit one creature or several. Each time you use this effect, the sky grows darker. After the 10th use, the sky above becomes entirely dark, and you can no longer use this effect."
+			],
+			"damageInflict": [
+				"force"
+			],
+			"abilityCheck": [
+				"intelligence"
+			],
+			"miscTags": [
+				"THP"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Quasar",
+			"source": "HavenSpells",
+			"level": 6,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You produce a beam of radiance in a line, 100 feet long and 5 feet wide. Each creature in the line must make a Dexterity saving throw. A target takes {@damage 10d8} radiant damage and is {@condition blinded} for 1 minute on a failed save, or half as much damage and is not {@condition blinded} on a successful one.",
+				"A creature {@condition blinded} by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, it is no longer {@condition blinded}."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@dice 1d8} for each slot level above 6th."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrow": [
+				"dexterity",
+				"constitution"
+			],
+			"areaTags": [
+				"L"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Starcrossed Binding",
+			"source": "HavenSpells",
+			"level": 7,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "two stone rings made from the same meteorite and a diamond worth at least 3000 gp"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You adorn two willing creatures within range, bonding them together across time and space. As long as the two creatures remain on the same plane of existence, each creature gains a +1 bonus to its AC and saving throws, and is immune to the {@condition charmed} condition. Additionally each target knows the direction and distance to the other, and if one of them travels or is transported to a different plane, the other knows to which one they went.",
+				"The spell ends if one of the creatures is killed. A creature can only benefit from this spell once in its lifetime.",
+				"This spell can only be dispelled by a wish spell."
+			],
+			"miscTags": [
+				"MAC"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Starlight Spear",
+			"source": "HavenSpells",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You weave threads of starlight together to create a spear of solidified light in your hand. This magic spear lasts until the spell ends. It counts as a simple melee weapon with which you are proficient. It deals {@damage 2d12} radiant damage on a hit and has the reach and thrown (20/60ft.) properties. In addition, if you move at least 20 feet straight toward a target, your next attack with this weapon deals an additional {@damage 1d12} radiant damage on a hit.",
+				"If you drop the weapon or throw it, it dissipates at the end of the turn. Thereafter, while the spell persists, you can use a bonus action to cause the spear to reappear in your h"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 3rd- or 4th-level spell slot, the damage increases to {@dice 3d12}. When you cast it using a 5th- or 6th-level spell slot, the damage increases to {@dice 4d12}. When you cast it using a spell slot of 7th level or higher, the damage increases to {@dice 5d12}."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Twinkle",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create or manipulate lights you can see within range and that fit within a 5-foot cube:",
+				"-You create a small burst of light, providing bright light in a 5-foot radius and dim light for an additional 5 feet until the start of your next turn.",
+				"-You cause a nonmagical light to dim until the start of your next turn. An object that usually casts dim light no longer casts light, and an object that casts bright light now casts dim light.",
+				"-You change the color of a light for 1 minute.",
+				"If you cast this spell multiple times, you can have up to three non-instantaneous effects created by it active at a time, and you can dismiss such an effect as an action."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Ultraviolet Pulse",
+			"source": "HavenSpells",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You hurl a ball of glowing violet energy towards one creature within range, which bursts into a pulse of {@condition invisible} radiation on impact. Make a ranged spell attack against the target. On a hit, it takes {@damage 5d6} radiant damage and must make a Constitution save or be {@condition poisoned} for 1 minute. The target can repeat this save at the end of each of its turns, ending the effect on a success."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Vacuum",
+			"source": "HavenSpells",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"m": "a sealed container"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You draw all the air out of a creature within range. The target must make a Constitution saving throw. On a failed save, it takes {@damage 8d6} bludgeoning damage and begins suffocating. On a successful one, it takes half as much damage and does not begin suffocating.",
+				"The target can repeat the saving throw at the end of each of its turns, ending the spell on a success."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@dice 1d6} for each slot level above 5th."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Radiant Blast",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A line of radiant energy 10 feet long and 5 feet wide emanates from you in a direction you choose. Each creature of your choice within the line must succeed on a Constitution saving throw or take {@damage 1d8} radiant damage and have disadvantage on opportunity attacks against you until the end of the turn."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"The spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"L"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Radiant Deathflare",
+			"source": "HavenSpells",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You envelop a creature of your choice that you can see within range in pure white light. The target must make a Constitution saving throw. The target takes {@damage 7d8} radiant damage on a failed save, or half as much damage on a successful one.",
+				"If the target is reduced to 0 hit points by this damage, the light bursts outwards. Every other creature within 20 feet of the target must make a Dexterity saving throw, taking {@damage 7d8} radiant damage on a failed save or half as much damage on a successful one.",
+				"If the target is not reduced to 0 hit points, the light instead continues to envelop it until the end of your next turn if it failed its save. Until then, the target sheds dim light in a 10-foot radius, and attacks made against it are made with advantage."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d8} for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"dexterity",
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST",
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Rainbow",
+			"source": "HavenSpells",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You imbue your bow or crossbow with magical energy, causing it to shimmer with scintillating colors. During the duration, when you attack with the weapon you can conjure magical ammunition for the attack. You can conjure this ammunition up to seven times, with each arrow/bolt you conjure having its own unique properties. Once you have conjured all seven, the spell ends.",
+				"1st attack. You conjure and attack with a red arrow/bolt. Hit or miss, the arrow/bolt explodes once it reaches its target. The target and each creature within 10 feet of it must make a Dexterity saving throw, taking {@damage 2d6} fire damage on a failed save or half as much on a successful one.",
+				"2nd Attack. You conjure and attack with a orange arrow/bolt. On a hit, the target takes a extra {@damage 2d6} acid damage, and another {@damage 1d6} acid damage at the end of its next turn.",
+				"3rd Attack. You conjure and attack with a yellow arrow/bolt. On a hit, the target takes an extra {@damage 2d6} radiant damage, and must succeeds on a Constitution saving throw or become {@condition blinded} until the start of your next turn.",
+				"4th Attack. You conjure and attack with a green arrow/bolt. On a hit, the target takes an extra {@damage 2d8} poison damage, and must succeed on a Constitution saving throw or become {@condition poisoned} until the start of your next turn.",
+				"5th Attack. You conjure and attack with a blue arrow/bolt. On a hit, the target takes {@damage 2d4} cold damage and must make a Strength saving throw as ice envelops it. On a failed save, it is {@condition restrained} until the start of your next turn. On a successful save, it is not {@condition restrained} but its speed is halved until the start of your next turn.",
+				"6th Attack. You conjure and attack with a indigo arrow/bolt. On a hit, the target takes a extra {@damage 2d6} lightning damage. Also, each creature in a 5-foot wide line between you and the target must make a Dexterity saving throw, taking {@damage 2d6} lightning damage on a failed save or half as much on a successful one.",
+				"7th Attack. You conjure and attack with a violet arrow/bolt. On a hit, the target takes an extra {@damage 2d6} psychic damage, and must succeed on a Wisdom saving throw or become {@condition stunned} until the start of your next turn."
+			],
+			"damageInflict": [
+				"cold",
+				"lightning",
+				"psychic",
+				"radiant"
+			],
+			"conditionInflict": [
+				"blinded",
+				"poisoned",
+				"stunned"
+			],
+			"savingThrow": [
+				"strength",
+				"dexterity",
+				"constitution",
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Unstable Lightning",
+			"source": "HavenSpells",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "lightning in a bottle"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Make a ranged spell attack roll, you deal {@damage 2d8} lightning damage on a hit, and if there is another creature within 10ft, make another attack roll, on a hit the spell jumps to the new target, this effect repeats, no matter if the creature is allied or enemy. This spell cannot hit a target twice with a single casting. If there are multiple targets that the spell can jump to, the DM randomly determines on which it will go to next."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the lightning damage increases by {@dice 1d8} for each slot level above first."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Lightning Spear",
+			"source": "HavenSpells",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a spear"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A spear of storm appears in your hands, it has all the properties of a normal spear but deals {@damage 2d8} lightning damage on a hit, and it comes back to your hand after every throw. In addition if you hit a target twice with this spear in a turn, it becomes polarised. While polarised in this way the next two attack rolls made with metallic weapons, or dealing lightning damage, against the target have advantage, thanks to the attraction of the electricity."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 3rd or 4th level spell slot, the damage increases to {@dice 3d8}. When you cast it using a 5th or 6th level spell slot, the damage increases to {@dice 4d8}. When you cast it using a spell slot of 7th level or higher, the damage increases to {@dice 5d8}."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			}
+		},
+		{
+			"name": "Overcharge",
+			"source": "HavenSpells",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of copper wire that you crush"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Touch one willing ally within range, you infuse them with electric energy. While the spell is active, the target can use a bonus action on each of its turn to teleport up to 15ft, it has resistance against lightning and thunder damage. In addition, when a creature damages them, they can use their reaction to make a weapon attack against that creature.",
+				"Right after the spell ends, the target takes {@damage 3d8} lightning damage as the electricity escapes their body"
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"miscTags": [
+				"TP"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Reverberating Jump",
+			"source": "HavenSpells",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of copper wire that you crush"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You teleport to a point that you can see within 120 feet. This creates a line of thunderous energy between your point of origin and arrival. All creatures within 10 feet of that line must make a Constitution saving throw or take {@damage 4d8} thunder damage and be pushed back 10ft. They take half as much damage on a success, and are not pushed back. The thunder can be heard from up to 300 feet away."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the thunder damage increases by {@dice 1d8} and the length that you can teleport increases by 10ft for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"TP"
+			],
+			"areaTags": [
+				"L"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Aegis",
+			"source": "HavenSpells",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You touch a nonmagical suit of armor. Until the spell ends, that suit of armor becomes a magical suit of armor that grants a +1 bonus to its wearer's AC. Also, for the duration the wearer has resistance to damage from spells."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the AC bonus increases to +2. When you use a spell slot of 8th level or higher, the AC bonus increases to +3"
+					]
+				}
+			],
+			"miscTags": [
+				"MAC"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Ambrosia",
+			"source": "HavenSpells",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "two fine glass bottles worth at least 10 gp each",
+					"consumed": true,
+					"cost": 1000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"You spend the casting time speaking a prayer, and then touch the two glass bottles used this spell's material components. Each bottle becomes filled with a sweet, aromatic liquid that glows with divine magic. When the spell ends, this liquid instantly evaporates if it was not consumed.",
+				"As an action, a creature can drink a bottle of ambrosia or administer it to another creature. The creature is cured of any disease or poison afflicting it, and for the next hour it rendered immune to disease, poison damage, and the {@condition poisoned} condition, For the same duration, it has advantage on Constitution saving throws. Also, the ambrosia provides enough nourishment (both food and drink) to sustain a creature for I day.",
+				"Consistently drinking ambrosia can confer longevity upon those that consume it. A creature that drinks ambrosia every day for 30 days begins to reap this benefit. As long as the creature continues to drink ambrosia every day, it ages at half the normal rate. If the creature ever misses a day, it must drink for another 30 days before its aging begins to slow down again."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, 1 additional bottles worth of ambrosia is conjured for each slot level above 5th. Additional glass bottles must be provided for each additional bottles-worth of ambrosia."
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Arsenal of Flame",
+			"source": "HavenSpells",
+			"level": 7,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You cause an array of flaming, spectral weaponry to spark into existence, and begin to assault your foes. Choose up to six creatures you can see within range. For each creature you target, you conjure a flaming weapon In an unoccupied space within 5 feet of the target. Each weapon then makes a melee spell attack against its target using your attack modifier, dealing {@damage 5d6} fire damage on a hit.",
+				"At the start of each of your turns, each weapon attempts to move up to 30 feet closer to its target if the target is outside of its 5-foot reach, and then repeats its attack if it successfully reached its target. Also, if a weapon's target leaves its 5-foot reach, the weapon can make an opportunity attack against the target, following the regular rules for opportunity attacks. Each weapon can only make one opportunity attack per round.",
+				"If a weapon's target dies, that weapon dissipates into ash."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 8th level or higher, you can target two additional creatures for each slot level above 7th."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Bind Spirit",
+			"source": "HavenSpells",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a golden ring, bracelet, or necklace inlaid with a ruby, worth at least 200gp in total",
+					"cost": 20000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"You touch the piece of jewelry that serves as the material component for this spell to a creature that has died within the last hour. If the creature that died within the last hour. If the creature's soul is willing, it becomes bound to that piece of jewelry for the duration.",
+				"While the soul is bound in this way, it can telepathically communicate with any creature that wears the jewelry it is bound to, and that creature can telepathically communicate to is as well.",
+				"The spell ends if the jewelry is destroyed, if the bound creature is returned to life, or if the spell is cast again on the same creature and the creature chooses to leave to the new jewelry."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Boil",
+			"source": "HavenSpells",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You cause the area of a 40-foot cube within range to instantly increase in temperature. This temperature increase lasts for the duration. When the area appears, each creature in it must make a Constitution saving throw. A creature takes {@damage 3d6} fire damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there.",
+				"This spell has additional effects when overlapping with areas of water. Being underwater does not confer fire resistance against the fire damage deal by this spell. Also, any underwater areas within the spell's area start bubbling furiously, turning those areas into difficult terrain and causing them to be heavily obscured.",
+				"Above water, however, this spell can be difficult to see. A creature that starts its turn within 6- feet of the area and can see the area must make a Wisdom (Perception) check to notice the heat haze created by this spell, and therefore notice the spell's effect. The DC for this check equals your spell save DC."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d6} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"abilityCheck": [
+				"wisdom"
+			],
+			"areaTags": [
+				"C"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Prismatic Bolt",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a clear prism of any sort, such as a crystal"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A shimmering bolt of light streaks from the prism. The bolt's color changes rapidly as it flies through the air. Make a ranged spell attack against a creature you can see within range. On a hit, roll {@dice 1d8} on the chart below to see which effect occurs. If the effect deals damage, then its dice are doubled if your attack was a critical hit. ",
+				"1. Red- The target takes {@damage 1d8} fire damage.",
+				"2. Orange- The target takes {@damage 1d8} acid damage.",
+				"3. Yellow- The target takes {@damage 1d8} lightning damage.",
+				"4. Green- The target takes {@damage 1d8} poison damage.",
+				"5. Blue- The target takes {@damage 1d8} cold damage",
+				"6. Indigo- Until the end of their next turn, the target's first attack is made at disadvantage and their movement speed is reduced by 10 feet. Additional applications of this effect further reduce the target's movement speed by 10 feet per application.",
+				"7. Violet- Until the end of their next turn or until they take damage, whichever happens first, the target cannot see more than 20 feet away. Additional applications of this effect can reduce the distance the target can see by 5 feet per application. Damage from this cantrip does not break the effect.",
+				"8. Special- Choose the effect you'd like to occur."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"You increase the number of dice you roll on the chart to determine effects by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8}). All effects apply to the target on a hit."
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"poison"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Pocketswap",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You swap the insides of two pockets you touch by teleporting their contents. Make a sleight of hand check, using your spellcasting ability modifier instead of dexterity against a target's passive perception. On a successful check, you swap the pockets' contents, and a target is unaware. On a failed check, both pockets contents teleport into the open space between you, fall onto the ground and make a target aware."
+			],
+			"abilityCheck": [
+				"dexterity"
+			],
+			"miscTags": [
+				"TP"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Arc Blade",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell’s range, otherwise the spell fails. On a hit, the attack does damage as normal, except that the entire attack deals lightning damage instead of its normal type. Additionally, an arc of lightning jumps to a creature you choose within 5 feet of the target, dealing {@damage 1d6} lightning damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"At 5th level, the melee attack deals an additional {@damage 1d8} lightning damage and secondary damage deals an additional {@damage 1d6} lightning damage to their targets. Both damage rolls increase by one die at 11th level ({@dice 2d8 / 3d6}), and 17th level ({@dice 3d8 / 4d6})."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Burning Blade",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [],
+			"damageInflict": [
+				"fire"
+			],
+			"areaTags": [
+				"ST",
+				"C"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Caustic Blade",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell’s range, otherwise the spell fails. On a hit, the attack does damage as normal, except that the entire attack deals acid damage instead of its normal type. If you miss by 3 or less, acid splashes on the target, and you instead deal {@damage 1d8} acid damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"At 5th level, the melee attack deals an additional {@damage 1d8} acid damage, and the damage the spell deals on a miss also deals an additional {@damage 1d8} acid damage. Both damage rolls increase by one die at 11th level ({@dice 2d8 / 3d8}), and 17th level ({@dice 3d8 / 4d8})."
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Force Buckler",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a specially-prepared gauntlet worth at least 5 gp",
+					"cost": 500
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You summon a translucent, yet visible, field of force which springs forth from the prepared gauntlet. Until the beginning of your next turn, this shield grants you a +2 bonus to your Armor Class, as if you were wielding a shield. This spell ends early if you are hit by an attack."
+			],
+			"miscTags": [
+				"MAC"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Force Dart",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a specially-prepared gauntlet worth at least 5 gp",
+					"cost": 500
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You fling a dart of magical force at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d10} force damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell's damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10})."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Force Weapon",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a specially-prepared gauntlet worth at least 5 gp",
+					"cost": 500
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You conjure a blade of magical force in the air, which lashes out at your foes. Make a melee spell attack. On a hit, you deal {@damage 1d10} force damage. The blade remains in existence for a short time; until the beginning of your next turn, you can make a single strike with your mystical blade as an opportunity attack."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"You can make 1 additional attack on your turn at 5th level (2 attacks), at 11th level (3 attacks), and at 17th level (4 attacks)."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Frigid Blade",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell’s range, otherwise the spell fails. On a hit, the attack does damage as normal, except that the entire attack deals cold damage instead of its normal type.",
+				"Additionally, the target is covered in a brittle frost until the start of your next turn. If the target willingly moves before then, you can use your reaction to deal {@damage 1d8} cold damage to the target, ending the spell."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"At 5th level, the melee attack and secondary damage each deal an additional {@damage 1d8} cold damage. Both damage rolls increase by {@dice 1d8} at 11th level ({@dice 2d8 / 3d8}), and 17th level ({@dice 3d8 / 4d8})."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Magic daggers",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"With a flourish, you conjure a throwing dagger of magical force out of thin air and flick it from your wrist at a target you can see. Make a ranged spell attack roll against a creature within range. On a hit, the target takes {@dice 1d6} magical piercing damage. The dagger vanishes after the attack."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"At higher levels, you conjure more daggers out of force and make additional attacks: two daggers at 5th level, three daggers at 11th level, and four daggers at 17th level. You can use the daggers to attack the same target or different ones. Make a separate attack roll for each dagger."
+					]
+				}
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Phantom Grapnel",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You conjure a chain and hook made of magical force, which you propel at a creature or unoccupied space you can see within range. When you target a space or a creature of Huge size or larger, your grapnel pulls you to that target in a straight line. You provoke opportunity attacks for this movement as normal. When you target a creature of Large size or smaller, you pull the target up to 10 feet towards you. A creature can make a Strength saving throw to resist this movement."
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"ST",
+				"W"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Quickstep",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You call upon your inner reserves to give you a brief flash of speed. When you cast this spell, your base movement speed increases by 10 feet until the beginning of your next turn."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Sonic Pulse",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You compress a thunderous boom into an {@condition invisible} ball and project it at a creature you can see within range. Make a ranged spell attack. On a hit, the target takes {@damage 1d8} thunder damage and is {@condition deafened} until the start of your next turn. If the spell’s target is within 10 feet of you, this spell’s damage becomes {@dice d10}s, instead of {@dice d8}s."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell’s damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+					]
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"conditionInflict": [
+				"deafened"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Springheel",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You flood magic into your legs, allowing you to bound high into the air from a standstill. When you cast this spell, your jump distance increases 10 feet until the beginning of your next turn, and you can make a running high jump or a running long jump without a running start."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Thunderous Distortion",
+			"source": "HavenSpells",
+			"level": 0,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You produce a distorted wave of noise in a 10-foot cone, which can be heard up to 100 feet away. Each creature in that area must succeed a Constitution saving throw, or take {@damage 1d6} thunder damage. An echo of this noise persists until the end of your next turn. If you cast this spell again before the end of your next turn, its damage becomes {@dice d8}s, instead of {@dice d6}s."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell’s damage increases by {@dice 1d6} when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
+					]
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"areaTags": [
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}
